@@ -19,7 +19,14 @@
         background-color: #f3f4f6;
       }
     </style>
-
+  <style>
+    html {
+      /* 세로 스크롤바 공간을 항상 확보해서 폭이 안 바뀌도록 */
+      overflow-y: scroll;
+      /*(옵션) 최신 브라우저용: 스크롤바 공간 고정*/
+      scrollbar-gutter: stable;
+    }
+  </style>
     <!-- Vite가 main.tsx를 불러오는 부분 – 이 줄은 건드리지 말 것 -->
     <script type="module" crossorigin src="/PeerBot-with-Dart/assets/index-Bz8mcAkW.js"></script>
     <link rel="stylesheet" crossorigin href="/PeerBot-with-Dart/assets/index-4eoCdr-l.css">
