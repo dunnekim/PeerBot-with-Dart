@@ -3,9 +3,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/PeerBot-with-Dart/',      // GitHub Pages 주소 기준
+  base: '/PeerBot-with-Dart/',      // GitHub Pages 주소 기준// vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/',              // ← 여기만 바꾸거나 아예 지워도 됨(기본값이 '/')
   build: {
-    outDir: 'docs',                 // GitHub Pages가 바라보는 폴더
-    emptyOutDir: true,              // 기존 docs 싹 비우고 다시 만들기
+    outDir: 'docs',       // GitHub Pages가 docs 폴더를 바라보도록 쓰던 설정이면 그대로 유지
   },
 });
